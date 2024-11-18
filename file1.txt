@@ -1,3 +1,8 @@
 1 line
-2 line
+<<<<<<< HEAD
+2 lin
 3 rd time enhance
+=======
+2 line in main
+3 line in main
+>>>>>>> orgin/main
