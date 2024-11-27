@@ -5,13 +5,18 @@ pipeline {
     stage('Stage 1') {
       steps {
         git "https://github.com/devopsusergit/PetStoreWebApp.git"
-        sh 'mvn clean package'
+      
         script {
           echo 'This whole pipeline will take ~40sec to finish.'
         }
       }
     }
-
+   stage("build"){
+     steps{
+       echo "build stage"
+         sh 'mvn clean package
+     }
+   }
     stage('Parallel stages') {
       parallel {
 
